@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Glass</title>
+	<style type="text/css">
+		
+		*
+		{
+			margin: 0;
+			padding: 0;
+		}
+
+		.container
+		{
+			width: 100%;
+			height: 100vh;
+			background-image: url('img/glass.jpg');
+			background-size: cover;
+			background-position: center;
+			background-attachment: fixed;
+		}
+
+		.he
+		{
+			margin: 0px;
+			height: 80px;
+		}
+
+		.main
+		{
+			margin-left: 80px;
+			width: 750px;
+			height: 400px;
+			background-color: aquamarine;
+		}
+
+		form
+		{
+			float: left;
+			margin-top: 25px;
+			margin-left: 25px;
+		}
+
+		input
+		{
+			background: none;
+			outline: none;
+			border: 2px solid green;
+			border-radius: 50px;
+			padding: 15px;
+			font-size: 20px;
+		}
+
+		input:hover
+		{
+			cursor: pointer;
+			background-color: green;
+			color: white;
+		}
+
+		h1
+		{
+			margin-top: 50px;
+			font-size: 50px;
+			margin-left: 25px;
+		}
+
+		p
+		{
+			margin-right: 25px;
+			margin-top: 25px;
+			margin-left: 25px;
+			text-align: justify;
+			font-size: 20px;
+		}
+
+	</style>
+</head>
+<body>
+
+	<div class="container">
+
+		<h1 class="he"></h1>
+
+		<div class="main">
+			
+			<form action="user/glassMachine.jsp" method="get">
+				<input type="submit" name="" value="Machine">
+			</form>
+
+			<form action="user/glassCompany.jsp" method="get">
+				<input type="submit" name="" value="Company">
+			</form>
+
+			<form action="user/glassProducts.jsp" method="get">
+				<input type="submit" name="" value="End Products">
+			</form>
+
+			<form action="user/glassPercentage.jsp" method="get">
+				<input type="submit" name="" value="Percentage per Year">
+			</form><br><br><br><br><br>
+
+			<h1>Description</h1>
+
+			<p>
+				
+				Glass is taken from the bin and taken to a glass treatment plant. 
+				The glass is sorted by colour and washed to remove any impurities.
+				The glass is then crushed and melted, then moulded into new products such as bottles and jars.
+				Or it may be used for alternative purposes such as brick manufacture or decorative uses.
+
+			</p>
+
+		</div>
+		
+
+	</div>
+
+</body>
+</html>

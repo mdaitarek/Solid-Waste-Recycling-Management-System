@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>All Tables</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.css" />
+
+
+	<style type="text/css">
+		
+		body
+		{
+			margin: 0px;
+			padding: 0px;
+		}
+
+		.left
+		{
+			width: 35%;
+			height: 100vh;
+			background-color: #0AB6B0;
+			float: left;
+			text-align: center;
+		}
+
+		.m1
+		{
+		    width: 60px;
+		    height: 30px;
+		    background-color: green;
+		    /* padding-left: 23px; */
+		    border-bottom-left-radius: 15px;
+		    margin-left: 20px;
+		    border-bottom-right-radius: 15px;
+		    border-bottom: 2px solid white;
+		    border-right: 2px solid white;
+		    border-left: 2px solid white;
+		    animation-delay: 1s;
+		}
+
+		.m1 a
+		{
+			text-decoration: none;
+		}
+
+		.m1 h3
+		{
+			margin: 0px;
+		    padding-top: 3px;
+		    text-align: center;
+		    color: yellow;
+		}
+
+		/*.m1 h3:hover
+		{
+			padding-top: 25px;
+			transition: 0.5s;
+		}
+
+		.m1:hover
+		{
+			height: 80px;
+			cursor: pointer;
+			transition: 0.5s;
+		}*/
+
+		.left h1
+		{
+			color: #fff;
+			padding-top: 280px;
+		}
+
+		#he
+		{
+			animation-duration: 1.5s;
+			font-size: 35px;
+		}
+
+		.right
+		{
+			width: 65%;
+			height: 100vh;
+			float: left;
+			/*background-color: black;*/
+			background-image: url('images/27.jpg');
+			background-size: cover;
+			background-position: center;
+			background-attachment: fixed;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			/*background: linear-gradient(0deg, red, yellow);*/
+			overflow-y: scroll;
+			position: relative;
+		}
+
+		.right a
+		{
+			text-decoration: none;
+			z-index: 1;
+		}
+
+		.right h1
+		{
+			font-size: 40px;
+		    font-weight: lighter;
+		    color: black;
+		    background-color: rgba(255, 255, 255, 0.8);
+		    margin: 0px;
+		    padding-top: 6px;
+		    padding-bottom: 6px;
+		    padding-left: 0px;
+		    padding-right: 0px;
+		    text-align: center;
+		    margin-left: -370px;
+		    /* border-top-right-radius: 40px; */
+		    margin-top: 40px;
+		    margin-right: -120px;
+		}
+
+		.right h1:hover
+		{
+			margin-left: -330px;
+			background-color: #00ffff;
+			color: #000;
+		}
+
+		/*#bl
+		{
+			width: 60%;
+			height: 50px;
+			background-color: #27C088;
+			background-color: rgba(255, 255, 255, 0.5);
+			border-top-right-radius: 40px;
+			border-bottom-right-radius: 40px;
+			margin-left: 20px;
+		}
+
+
+		#bl a
+		{
+			text-decoration: none;
+		}
+
+		#bl h1
+		{
+		    color: #000;
+		    text-align: center;
+		    vertical-align: middle;
+		    padding-top: 6px;
+		    font-weight: bold;
+		    font-size: 35px;
+		}*/
+
+		.overlay
+		{
+			width: 100%;
+			height: 1400%;
+			/*background: linear-gradient(45deg, green, blue, violet);*/
+			background-color: blue;
+			position: absolute;
+			opacity: 0.2;
+		}
+
+		/*#bl:hover
+		{
+			width: 80%;
+			border: none;
+			cursor: pointer;
+			border-top-right-radius: 40px;
+			border-bottom-left-radius: 40px;
+			border-bottom-right-radius: 0px;
+			background-color: #0AB6B0;
+		}*/
+
+	</style>
+</head>
+<body>
+
+	<div class="left">
+		<div id="m01" class="m1 animated slideInDown">
+			<a href="http://localhost:8085/dbms_project/"><h3 id="head1">Home</h3></a>
+		</div>
+		<h1 id="he" class="animated bounceInDown">All tables are shown here >> </h1>
+	</div>
+
+	<div class="right">
+
+		<br><br><br>
+		<h2 style="margin: 0px; margin-bottom: 4350px;"></h2>
+		<a href="Waste Picker/wastePicker.html" target="_blank"><h1 class="animated slideInLeft">Waste Picker</h1></a>
+		<a href="Scavangers/scavangers.html" target="_blank"><h1 class="animated slideInLeft">Scavangers</h1></a>
+		<a href="Area Agent/areaAgent.html" target="_blank"><h1 class="animated slideInLeft">Area Agent</h1></a>
+		<a href="Collector/collector.html" target="_blank"><h1 class="animated slideInLeft">Collector</h1></a>
+		<a href="Local Dealer/localDealer.html" target="_blank"><h1 class="animated slideInLeft">Local Dealer</h1></a>
+		<a href="Local Waste Collector/localWasteCollector.html" target="_blank"><h1 class="animated slideInLeft">Local Waste Collector</h1></a>
+		<a href="Aggregator/aggregator.html" target="_blank"><h1 class="animated slideInLeft">Aggregator</h1></a>
+		<a href="Agent Transportation/agentTransportation.html" target="_blank"><h1 class="animated slideInLeft">Agent Transportation</h1></a>
+		<a href="Local Dealer Transportation/localDealerTransportation.html" target="_blank"><h1 class="animated slideInLeft">Local Dealer Transportation</h1></a>
+		<a href="Community Worker/communityWorker.html" target="_blank"><h1 class="animated slideInLeft">Community Worker</h1></a>
+		<a href="Institution Worker/institutionWorker.html" target="_blank"><h1 class="animated slideInLeft">Institution Worker</h1></a>
+		<a href="Agent Transaction/agentTransaction.html" target="_blank"><h1 class="animated slideInLeft">Agent Transaction</h1></a>
+		<a href="Dealer Transaction/dealerTransaction.html" target="_blank"><h1 class="animated slideInLeft">Dealer Transaction</h1></a>
+		<a href="Transportation/transportation.html" target="_blank"><h1 class="animated slideInLeft">Transportation</h1></a>
+		<a href="Transaction/transaction.html" target="_blank"><h1 class="animated slideInLeft">Transaction</h1></a>
+		<a href="Driver/driver.html" target="_blank"><h1 class="animated slideInLeft">Driver</h1></a>
+		<a href="Drives/drives.html" target="_blank"><h1 class="animated slideInLeft">Drives</h1></a>
+		<a href="Driver's Contact Number/driver'sContactNumber.html" target="_blank"><h1 class="animated slideInLeft">Driver's Contact Number</h1></a>
+		<a href="Company Transaction/companyTransaction.html" target="_blank"><h1 class="animated slideInLeft">Company Transaction</h1></a>
+		<a href="Client's Transaction/client'sTransaction.html" target="_blank"><h1 class="animated slideInLeft">Clients Transaction</h1></a>
+		<a href="Clients/clients.html" target="_blank"><h1 class="animated slideInLeft">Clients</h1></a>
+		<a href="Company Transportation/companyTransportation.html" target="_blank"><h1 class="animated slideInLeft">Company Transportation</h1></a>
+		<a href="Product Transaction/productTransaction.html" target="_blank"><h1 class="animated slideInLeft">Product Transaction</h1></a>
+		<a href="Client's Types of Products/clientsTypesOfProducts.html" target="_blank"><h1 class="animated slideInLeft">Clients Types of Products</h1></a>
+		<a href="Storage/storage.html" target="_blank"><h1 class="animated slideInLeft">Storage</h1></a>
+		<a href="Products/products.html" target="_blank"><h1 class="animated slideInLeft">Products</h1></a>
+		<a href="Production/production.html" target="_blank"><h1 class="animated slideInLeft">Production</h1></a>
+		<a href="Company/company.html" target="_blank"><h1 class="animated slideInLeft">Company</h1></a>
+		<a href="Stored Products/storedProducts.html" target="_blank"><h1 class="animated slideInLeft">Storing Products</h1></a>
+		<a href="Employee Contact Number/employeeContactNumber.html" target="_blank"><h1 class="animated slideInLeft">Employee Contact Number</h1></a>
+		<a href="Works/works.html" target="_blank"><h1 class="animated slideInLeft">Works</h1></a>
+		<a href="Paper Bleaching/paperBleaching.html" target="_blank"><h1 class="animated slideInLeft">Paper Bleaching</h1></a>
+		<a href="Employee/employee.html" target="_blank"><h1 class="animated slideInLeft">Employee</h1></a>
+		<a href="Plastic Recycling/plasticRecycling.html" target="_blank"><h1 class="animated slideInLeft">Plastic Recycling</h1></a>
+		<a href="Paper Recycling/paperRecycling.html" target="_blank"><h1 class="animated slideInLeft">Paper Recycling</h1></a>
+		<a href="Waste Recycling/wasteRecycling.html" target="_blank"><h1 class="animated slideInLeft">Waste Recycling</h1></a>
+		<a href="Wood Recycling/woodRecycling.html" target="_blank"><h1 class="animated slideInLeft">Wood Recycling</h1></a>
+		<a href="Food Recycling/foodRecycling.html" target="_blank"><h1 class="animated slideInLeft">Food Recycling</h1></a>
+		<a href="Food In-vessel Composting/foodIn-vesselComposting.html" target="_blank"><h1 class="animated slideInLeft">Food In-vessel Composting</h1></a>
+		<a href="Tyre Recycling/tyreRecycling.html" target="_blank"><h1 class="animated slideInLeft">Tyre Recycling</h1></a>
+		<a href="Food Anaerobic Digestion/foodAnaerobicDigestion.html" target="_blank"><h1 class="animated slideInLeft">Food Anaerobic Digestion</h1></a>
+		<a href="Cloth Recycling/clothRecycling.html" target="_blank"><h1 class="animated slideInLeft">Cloth Recycling</h1></a>
+		<a href="Glass Size Classifier/glassSizeClassifier.html" target="_blank"><h1 class="animated slideInLeft">Glass Size Classifier</h1></a>
+		<a href="Recycling Process/recyclingProcess.html" target="_blank"><h1 class="animated slideInLeft">Recycling Process</h1></a>
+		<a href="Glass Recycling/glassRecycling.html" target="_blank"><h1 class="animated slideInLeft">Glass Recycling</h1></a>
+		<a href="Used Technology/usedTechnology.html" target="_blank"><h1 class="animated slideInLeft">Used Technology</h1></a>
+		<a href="Used Chemicals/usedChemicals.html" target="_blank"><h1 class="animated slideInLeft">Used Chemicals</h1></a>
+		<a href="Iron Recycling/ironRecycling.html" target="_blank"><h1 class="animated slideInLeft">Iron Recycling</h1></a>
+		<a href="Error/error.html" target="_blank"><h1 class="animated slideInLeft">Error</h1></a>
+		<a href="Machine/machine.html" target="_blank"><h1 class="animated slideInLeft">Machine</h1></a>
+		<a href="Chemicals/chemicals.html" target="_blank"><h1 class="animated slideInLeft">Chemicals</h1></a>
+		<br><br>
+
+		<div class="overlay">
+			
+		</div>
+
+	</div>
+
+	<script src="main.js"></script>
+	<script type="text/javascript">
+		$(function(){
+			$('#m01').on('mouseover', function(){
+				$('#m01').css({
+					height: '50px',
+					transition: '0.5s'
+				});
+				$('#head1').css({
+					paddingTop: '15px',
+					transition: '0.5s'
+				});
+			});
+		});
+
+		$(function(){
+			$('#m01').on('mouseout', function(){
+				$('#m01').css({
+					height: '30px'
+				});
+				$('#head1').css({
+					paddingTop: '3px'
+				});
+			});
+		});
+	</script>
+
+</body>
+</html>

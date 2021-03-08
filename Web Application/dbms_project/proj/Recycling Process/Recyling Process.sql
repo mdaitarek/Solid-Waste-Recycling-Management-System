@@ -1,0 +1,24 @@
+CREATE TABLE Recycling_Process(
+	process_date			 DATE,
+	process_id				 VARCHAR2(15),
+	process_collected_waste	 NUMBER(20,5) CHECK (process_collected_waste>0),
+	process_recycled_amount	 NUMBER(20,5) CHECK (process_recycled_amount>0),
+	process_rate			 NUMBER(20,5) CHECK (process_rate>0),
+	
+	CONSTRAINT RP_process_date_id_pk
+		PRIMARY KEY(process_date,process_id)
+);
+
+
+INSERT INTO Recycling_Process VALUES (TO_DATE('1-JAN-2019','DD-MON-YYYY'),'PROC_00000001',1500,1000,66.67);
+INSERT INTO Recycling_Process VALUES (TO_DATE('2-JAN-2019','DD-MON-YYYY'),'PROC_00000002',500,480,96);
+INSERT INTO Recycling_Process VALUES (TO_DATE('3-JAN-2019','DD-MON-YYYY'),'PROC_00000003',1500,1200,80);
+INSERT INTO Recycling_Process VALUES (TO_DATE('4-JAN-2019','DD-MON-YYYY'),'PROC_00000004',2200,1900,83.36);
+INSERT INTO Recycling_Process VALUES (TO_DATE('5-JAN-2019','DD-MON-YYYY'),'PROC_00000005',1050,950,90.48);
+INSERT INTO Recycling_Process VALUES (TO_DATE('6-JAN-2019','DD-MON-YYYY'),'PROC_00000006',1500,1000,66.67);
+INSERT INTO Recycling_Process VALUES (TO_DATE('6-JAN-2019','DD-MON-YYYY'),'PROC_00000007',2000,1500,66.67);
+INSERT INTO Recycling_Process VALUES (TO_DATE('6-JAN-2019','DD-MON-YYYY'),'PROC_00000008',500,250,50);
+
+
+
+INSERT INTO Recycling_Process VALUES (TO_DATE('2-JAN-2019','DD-MON-YYYY'),'PROC_00000001',2500,1888,75.52);

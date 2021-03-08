@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Cloth</title>
+	<style type="text/css">
+		
+		*
+		{
+			margin: 0;
+			padding: 0;
+		}
+
+		.container
+		{
+			width: 100%;
+			height: 100vh;
+			background-image: url('img/cloth.jpg');
+			background-size: cover;
+			background-position: center;
+			background-attachment: fixed;
+		}
+
+		form
+		{
+			float: left;
+			margin-top: 25px;
+			margin-left: 25px;
+		}
+
+		input
+		{
+			background: none;
+			outline: none;
+			border: 2px solid green;
+			border-radius: 50px;
+			padding: 15px;
+			font-size: 20px;
+		}
+
+		input:hover
+		{
+			cursor: pointer;
+			background-color: green;
+			color: white;
+		}
+
+		h1
+		{
+			margin-top: 50px;
+			font-size: 50px;
+			margin-left: 25px;
+		}
+
+		p
+		{
+			width: 500px;
+			text-align: justify;
+			font-size: 25px;
+			margin-left: 25px;
+			margin-top: 25px;
+		}
+
+
+	</style>
+</head>
+<body>
+
+	<div class="container">
+		
+		<form action="user/clothMachine.jsp" method="get">
+			<input type="submit" name="" value="Machine">
+		</form>
+
+		<form action="user/clothCompany.jsp" method="get">
+			<input type="submit" name="" value="Company">
+		</form>
+
+		<form action="user/clothProducts.jsp" method="get">
+			<input type="submit" name="" value="End Products">
+		</form>
+
+		<form action="user/clothPercentage.jsp" method="get">
+			<input type="submit" name="" value="Percentage per Year">
+		</form><br><br><br><br><br>
+
+		<h1>Description</h1>
+		<p>
+			Textile recycling is the process by which old clothing and other textiles
+			are recovered for reuse or material recovery. 
+			It is the basis for the textile recycling industry.
+		</p>
+
+	</div>
+
+</body>
+</html>

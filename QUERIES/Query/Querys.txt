@@ -1,0 +1,57 @@
+/*
+search available vehicle
+*/
+select VEHICLE_NUMBER as "Vehicle Number",vehicle_type as "Vehicle Type",per_lot_cost
+from transportation
+where AVAILABILITY = 'YES' and
+destination_date between
+to_date('2-1-2019','DD-MM-YYYY') and 
+to_date('3-1-2019','DD-MM-YYYY')
+
+
+/*
+search available drivers
+*/
+select name as "Driver Name",contact_no as "Contact Number"
+from   driver_contact_no natural join driver natural join drives
+where not exists
+(select * from drives 
+where driver.license_number=drives.license_number);
+and  
+address='Mirpur DOHS Dhaka';
+
+
+/*
+count a specific type of product from company
+*/
+select products.name as "Products Name",count(product_info_id) as "Number of Products",
+company.name as "Company Name"
+from company natural join production natural join products
+where products.name = 'Mirror' and type = 'Glass'
+
+
+/*
+products details
+*/
+select c.name,c.expense,pt.PRODUCT_NAME,pt.PRODUCT_TYPE,pt.PRICE 
+from company c  join production pd on (c.COMPANY_TRADE_NUM = pd.COMPANY_TRADE_NUM) 
+join product pt on (pd.PRODUCT_ID=pt.PRODUCT_ID and pd.PRODUCT_DATE=pt.PRODUCT_DATE)
+
+order by c.name;
+
+
+/*
+employee details
+*/
+select c.name,e.employee_name,e.employee_designation,
+e.employee_salary,e.employee_email
+
+From employee e join WORKS w on (e.EMPLOYEE_ID=w.EMPLOYEE_ID)
+join company c on (c.COMPANY_TRADE_NUM=w.COMPANY_TRADE_NUM);
+
+
+
+
+ 
+
+

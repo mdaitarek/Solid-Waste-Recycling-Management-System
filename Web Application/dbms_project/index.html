@@ -1,0 +1,610 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Home</title>
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.css" />
+
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+	<style type="text/css">
+		
+		body
+		{
+			margin: 0px;
+			padding: 0px;
+		}
+
+		.container
+		{
+			width: 100%;
+			height: 100vh;
+			background-image: url('img/02.jpg');
+			background-size: cover;
+			background-position: center;
+			background-attachment: fixed;
+			padding: 0px;
+		}
+
+		/*nav
+		{
+			width: 100%;
+			position: fixed;
+			background-color: rgba(255, 255, 255, 0.7);
+			animation-duration: 2s;
+		}
+
+		nav ul
+		{
+			list-style: none;
+			margin: 0px;
+			padding-top: 15px;
+			padding-bottom: 15px;
+			text-align: right;
+		}
+
+		nav.black ul
+		{
+			width: 100%;
+			background-color: #000;
+			text-align: right;
+			transition: 1.5s;
+		}
+
+		nav ul li
+		{
+			display: inline;
+			margin-right: 50px;
+		}
+
+		nav ul li a
+		{
+			font-size: 25px;
+			color: #000;
+		}
+
+		nav.black ul li a
+		{
+			color: white;
+		}
+
+		.menu a
+		{
+			text-decoration: none;
+		}
+
+		nav ul li a:hover
+		{
+			background-color: #990099;
+			color: #fff;
+		    padding: 5px;
+		    border-radius: 7px;
+		    transition: 0.3s;
+		}*/
+
+		/*#menubar ul ul
+{ position:absolute;
+  width:180px;
+  left:-999em;
+  z-index:99;
+  margin:0; }
+
+#menubar ul ul li
+{ float:left;
+  border:none;
+  height:30px;
+  line-height:30px;
+  width:180px;
+  margin:0;
+  padding:0; }
+
+#menubar ul ul li a,#menubar ul ul li a:visited,#menubar ul ul li a:active,#menubar ul ul li a:link
+{
+  margin:0;
+  height:30px;
+  line-height:30px;
+  background:#E5E5E5;
+	color:#666;
+	font-weight:bold;
+	text-transform:uppercase;
+	margin:0;
+	border:1px solid #F3F2F2;
+	border-bottom: 1px solid #C9C7C7;}
+
+#menubar ul ul li a:hover
+{ background:#F3F2F2;
+  color:#3BA0BC; }
+
+#menubar ul ul li.active a
+{ background:#F3F2F2;
+  color:#3BA0BC; }
+
+		/*.dropdown {
+		  	float: left;
+		  	overflow: hidden;
+		}
+
+		.dropdown .dropbtn {
+		  	font-size: 16px;  
+		  	border: none;
+		  	outline: none;
+		  	color: white;
+		  	padding: 14px 16px;
+		  	background-color: inherit;
+		  	font-family: inherit;
+		  	margin: 0;
+		}
+
+		.dropdown-content {
+		  	display: none;
+		  	position: absolute;
+		  	background-color: #f9f9f9;
+		  	min-width: 160px;
+		  	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+		  	z-index: 1;
+		}
+
+		.dropdown-content a {
+		  	float: none;
+		  	color: black;
+		  	padding: 12px 16px;
+		  	text-decoration: none;
+		  	display: block;
+		  	text-align: left;
+		}
+
+		.dropdown-content a:hover {
+		  	background-color: #ddd;
+		}
+
+		.dropdown:hover .dropdown-content {
+		  	display: block;
+		}*/
+
+		.back
+		{
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			height: 100%;
+		}
+
+		.back h1
+		{
+			margin: 0px;
+			padding: 0px;
+			font-size: 60px;
+			font-weight: lighter;
+			color: #000;
+			animation-delay: 1s;
+			animation-duration: 1.5s;
+			margin-top: 140px;
+		}
+
+		.back a
+		{
+			text-decoration: none;
+			animation-delay: 2s;
+		}
+
+		.back h3
+		{
+		    margin: 0px;
+		    margin-top: 30px;
+		    color: #000;
+		    border: 2px solid #000;
+		    padding: 10px;
+		    padding-top: 5px;
+		    padding-bottom: 5px;
+		    border-radius: 7px;
+		    animation-duration: 3s;
+			animation-delay: 3.5s;
+			animation-iteration-count: infinite;
+		}
+
+		.back h3:hover
+		{
+			font-weight: bold;
+			color: #990099;
+			border: 2px solid #990099;
+		}
+
+		.d
+		{
+			background-image: url('img/5.jpg');
+			background-size: cover;
+			width: 100%;
+			height: 100vh;
+			background-position: center;
+			background-attachment: fixed;
+		}
+
+		/*.mn
+		{
+			margin: 0px;
+			padding: 0px;
+		}
+
+		.mn p
+		{
+		    background-color: aquamarine;
+		    font-weight: bold;
+		    padding: 20px;
+		    text-align: justify;
+		    margin: 0px;
+		}
+
+		.a1
+		{
+			border-right: 3px solid #000;
+			height: 300px;
+		}
+
+		.a2
+		{
+			border-right: 3px solid #000;
+			height: 300px;
+		}
+
+		.a3
+		{
+			border-right: 3px solid #000;
+			height: 300px;
+		}*/
+
+		nav
+		{
+			position: fixed;
+			width: 100%;
+		}
+
+
+		#nav,#nav ul {
+    list-style: none outside none;
+    margin: 0;
+    padding: 0;
+}
+#nav {
+    background-color: #000000;
+    border-radius: 5px 5px 5px 5px;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5);
+    display: table;
+    padding: 10px;
+    position: relative;
+    width: 100%;
+}
+#nav ul {
+    background-color: red;
+    border:1px solid red;
+    border-radius: 0 5px 5px 5px;
+    border-width: 0 1px 1px;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.5);
+    left: -9999px;
+    overflow: hidden;
+    padding: 20px 0 10px;
+    position: absolute;
+    top: -9999px;
+
+    -moz-transform: scaleY(0);
+    -ms-transform: scaleY(0);
+    -o-transform: scaleY(0);
+    -webkit-transform: scaleY(0);
+    transform: scaleY(0);
+
+    -moz-transform-origin: 0 0;
+    -ms-transform-origin: 0 0;
+    -o-transform-origin: 0 0;
+    -webkit-transform-origin: 0 0;
+    transform-origin: 0 0;
+
+    -moz-transition: -moz-transform 0.1s linear;
+    -ms-transition: -ms-transform 0.1s linear;
+    -o-transition: -o-transform 0.1s linear;
+    -webkit-transition: -webkit-transform 0.1s linear;
+    transition: transform 0.1s linear;
+}
+#nav li {
+    float: left;
+    position: relative;
+}
+#nav li a {
+    color: #FFFFFF;
+    display: block;
+    font-size: 16px;
+    padding: 7px 20px;
+    text-decoration: none;
+}
+#nav li:hover > a {
+    background-color: red;
+    border-radius: 5px 5px 5px 5px;
+    color: #FFFFFF;
+}
+#nav li:hover > a.hsubs {
+    border-radius: 5px 5px 0 0;
+}
+#nav li:hover ul.subs {
+    left: 0;
+    top: 34px;
+    width: 180px;
+
+    -moz-transform: scaleY(1);
+    -ms-transform: scaleY(1);
+    -o-transform: scaleY(1);
+    -webkit-transform: scaleY(1);
+}
+#nav ul li {
+    width: 100%;
+}
+#nav ul li:hover > a {
+    background-color: #222222 !important;
+    border-radius: 5px 5px 5px 5px;
+}
+
+/* colors */
+.colorScheme {
+    height: 32px;
+    list-style: none outside none;
+    margin: 0 auto 25px;
+    width: 320px;
+}
+.colorScheme a {
+    cursor: pointer;
+    float: left;
+    height: 30px;
+    margin: 0 5px;
+    width: 30px;
+}
+.colorScheme .red {
+    background-color: red;
+}
+.colorScheme .orange {
+    background-color: orange;
+}
+.colorScheme .pink {
+    background-color: pink;
+}
+.colorScheme .green {
+    background-color: green;
+}
+.colorScheme .blue {
+    background-color: blue;
+}
+.colorScheme .indigo {
+    background-color: indigo;
+}
+.colorScheme .violet {
+    background-color: violet;
+}
+.colorScheme .grey {
+    background-color: grey;
+}
+
+#red:target ~ #nav ul {
+    background-color: red;
+    border: 1px solid red;
+}
+#orange:target ~ #nav ul {
+    background-color: orange;
+    border: 1px solid orange;
+}
+#pink:target ~ #nav ul {
+    background-color: pink;
+    border: 1px solid pink;
+}
+#green:target ~ #nav ul {
+    background-color: green;
+    border: 1px solid green;
+}
+#blue:target ~ #nav ul {
+    background-color: blue;
+    border: 1px solid blue;
+}
+#indigo:target ~ #nav ul {
+    background-color: indigo;
+    border: 1px solid indigo;
+}
+#violet:target ~ #nav ul {
+    background-color: violet;
+    border: 1px solid violet;
+}
+#grey:target ~ #nav ul {
+    background-color: grey;
+    border: 1px solid grey;
+}
+
+#red:target ~ #nav li:hover > a {
+    background-color: red;
+}
+#orange:target ~ #nav li:hover > a {
+    background-color: orange;
+}
+#pink:target ~ #nav li:hover > a {
+    background-color: pink;
+}
+#green:target ~ #nav li:hover > a {
+    background-color: green;
+}
+#blue:target ~ #nav li:hover > a {
+    background-color: blue;
+}
+#indigo:target ~ #nav li:hover > a {
+    background-color: indigo;
+}
+#violet:target ~ #nav li:hover > a {
+    background-color: violet;
+}
+#grey:target ~ #nav li:hover > a {
+    background-color: grey;
+}
+
+	</style>
+
+</head>
+<body>
+
+	<div class="container">
+		
+		<nav id="menubar" class="animated slideInDown">
+
+			<ul id="nav">
+                <li><a href="#">Home</a></li>
+                <li><a class="hsubs" href="#">Recycling</a>
+                    <ul class="subs">
+                        <li><a href="metal.html" target="_blank">Metal</a></li>
+                        <li><a href="glass.html" target="_blank">Glass</a></li>
+                        <li><a href="wood.html" target="_blank">Wood</a></li>
+                        <li><a href="food.html" target="_blank">Food</a></li>
+                        <li><a href="cloth.html" target="_blank">Cloth</a></li>
+                        <li><a href="paper.html" target="_blank">Paper</a></li>
+                        <li><a href="plastic.html" target="_blank">Plastic</a></li>
+                        <li><a href="tyre.html" target="_blank">Tyre</a></li>
+                    </ul>
+                </li>
+                
+                
+                <li><a href="#">About</a></li>
+                <li><a href="">Users</a>
+                	<ul class="subs">
+	                	<li><a href="company.html" target="_blank">Company</a></li>
+	                    <li><a href="localDealer.html" target="_blank">Local Dealer</a></li>
+	                    <li><a href="areaAgent.html" target="_blank">Area Agent</a></li>
+	                    <li><a href="client.html" target="_blank">Client</a></li>
+                    </ul>
+                </li>
+                <li><a href="cp.html">Control Panel</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+			<!--
+			<ul>
+				
+				<li><a href="">Home</a></li>
+				<li><a href="">Recycling</a>
+
+					<ul>
+						<li><a href="">About Us</a></li>
+						<li><a href="">About Us</a></li>
+						<li><a href="">About Us</a></li>
+						<li><a href="">About Us</a></li>
+					</ul>
+
+				</li>
+				<li><a href="">About</a></li>
+				<li><a href="cp.html">Control Panel</a></li>
+				<li><a href="">Contact Us</a></li>
+
+			</ul>
+		-->
+
+		</nav>
+
+		<div class="back">
+			
+			<h1 class="animated flipInX">Welcome To Our Website</h1>
+			<a href="#" class="animated bounceInDown"><h3 class="animated heartBeat">Read More</h3></a>
+
+		</div>
+
+	</div>
+
+
+	<script src="main.js"></script>
+
+	<script type="text/javascript">
+		
+		$(window).on("scroll", function(){
+			if ($(window).scrollTop()) 
+			{
+				$("nav").addClass("black");
+			}
+			else
+			{
+				$("nav").removeClass("black");
+			}
+		});
+
+	</script>
+
+	<div class="d"></div>
+	<!--
+	<main class="mn">
+
+		<p>
+			What is Lorem Ipsum?
+			Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+
+			Why do we use it?
+			It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
+
+
+			Where does it come from?
+			Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.
+
+			The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.
+
+			What is Lorem Ipsum?
+			Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+
+			Why do we use it?
+			It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
+
+
+			Where does it come from?
+			Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.
+
+			The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.
+
+			What is Lorem Ipsum?
+			Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+
+			Why do we use it?
+			It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
+
+
+			Where does it come from?
+			Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.
+
+			The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.
+
+			What is Lorem Ipsum?
+			Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+
+			Why do we use it?
+			It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
+
+
+			Where does it come from?
+			Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.
+
+			The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.
+		</p>
+		
+	</main>
+
+	<footer>
+
+		<div class="col-sm-3 a1">
+			<p>dfhbvlfbvnhfibvn</p>
+		</div>
+
+		<div class="col-sm-3 a2">
+			<p>ldfvgbfdhbfbvhnfd</p>
+		</div>
+
+		<div class="col-sm-3 a3">
+			<p>dkfghbfdbgvngfkbnk</p>
+		</div>
+		
+		<div class="col-sm-3 a4">
+			<p>dkfghbfdbgvngfkbnk</p>
+		</div>
+
+	</footer>
+	-->
+</body>
+</html>

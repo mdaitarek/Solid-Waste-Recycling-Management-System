@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Store Chemicals</title>
+	<style type="text/css">
+		
+		*
+		{
+			margin: 0px;
+			padding: 0px;
+		}
+
+		body
+		{
+			background-color: black;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+		}
+
+		form
+		{
+			color: white;
+			margin-top: 150px;
+			font-size: 20px;
+		}
+
+	</style>
+</head>
+<body>
+
+	<form action="storeChemicals.jsp" method="post">
+		Chemical Name: <input type="text" name="cn" required><br><br>
+		Chemical Symbol: <input type="text" name="cs"><br><br>
+		Producer Company: <input type="text" name="pc"><br><br>
+		Reason: <input type="text" name="re"><br><br>
+		Amount per Day: <input type="number" name="apd"><br><br>
+		Price per Unit: <input type="number" name="ppu"><br><br>
+		Country of Origin: <input type="text" name="co"><br><br>
+		<input type="submit" name="" value="Insert">
+	</form><br><br>
+
+</body>
+</html>

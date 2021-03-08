@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Wood</title>
+	<style type="text/css">
+		
+		*
+		{
+			margin: 0;
+			padding: 0;
+		}
+
+		.container
+		{
+			width: 100%;
+			height: 100vh;
+			background-image: url('img/wood.jpg');
+			background-size: cover;
+			background-position: center;
+			background-attachment: fixed;
+		}
+
+		form
+		{
+			float: left;
+			margin-top: 25px;
+			margin-left: 25px;
+		}
+
+		input
+		{
+			background: none;
+			outline: none;
+			border: 2px solid white;
+			border-radius: 50px;
+			padding: 15px;
+			font-size: 20px;
+			color: white;
+		}
+
+		input:hover
+		{
+			cursor: pointer;
+			background-color: green;
+			color: white;
+		}
+
+		h1
+		{
+			margin-top: 50px;
+			font-size: 50px;
+			margin-left: 25px;
+			color: white;
+		}
+
+		p
+		{
+			width: 500px;
+			margin-left: 25px;
+			margin-top: 25px;
+			text-align: justify;
+			font-size: 25px;
+			color: white;
+		}
+
+	</style>
+</head>
+<body>
+
+	<div class="container">
+		
+		<form action="user/woodMachine.jsp" method="get">
+			<input type="submit" name="" value="Machine">
+		</form>
+
+		<form action="user/woodCompany.jsp" method="get">
+			<input type="submit" name="" value="Company">
+		</form>
+
+		<form action="user/woodProducts.jsp" method="get">
+			<input type="submit" name="" value="End Products">
+		</form>
+
+		<form action="user/woodPercentage.jsp" method="get">
+			<input type="submit" name="" value="Percentage per Year">
+		</form><br><br><br><br><br>
+
+		<h1>Description</h1>
+
+		<p>
+			
+			Timber recycling or wood recycling is the process of turning waste timber into usable products.
+			Timber can be chipped down into wood chips which can be used to power homes or power plants
+		</p>
+
+	</div>
+
+</body>
+</html>

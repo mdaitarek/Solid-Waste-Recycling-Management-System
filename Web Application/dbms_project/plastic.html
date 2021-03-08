@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Plastic</title>
+	<style type="text/css">
+		
+		*
+		{
+			margin: 0;
+			padding: 0;
+		}
+
+		.container
+		{
+			width: 100%;
+			height: 100vh;
+			background-image: url('img/plastic.jpg');
+			background-size: cover;
+			background-position: center;
+			background-attachment: fixed;
+		}
+
+		form
+		{
+			float: left;
+			margin-top: 25px;
+			margin-left: 25px;
+		}
+
+		input
+		{
+			background: none;
+			outline: none;
+			border: 2px solid white;
+			border-radius: 50px;
+			padding: 15px;
+			font-size: 20px;
+			color: white;
+		}
+
+		input:hover
+		{
+			cursor: pointer;
+			background-color: green;
+			color: white;
+		}
+
+		h1
+		{
+			margin-top: 50px;
+			font-size: 50px;
+			margin-left: 25px;
+			color: white;
+		}
+
+		p
+		{
+			text-align: justify;
+			width: 500px;
+			color: white;
+			font-size: 25px;
+			margin-left: 25px;
+			margin-top: 25px;
+		}
+
+	</style>
+</head>
+<body>
+
+	<div class="container">
+		
+		<form action="user/plasticMachine.jsp" method="get">
+			<input type="submit" name="" value="Machine">
+		</form>
+
+		<form action="user/plasticCompany.jsp" method="get">
+			<input type="submit" name="" value="Company">
+		</form>
+
+		<form action="user/plasticProducts.jsp" method="get">
+			<input type="submit" name="" value="End Products">
+		</form>
+
+		<form action="user/plasticPercentage.jsp" method="get">
+			<input type="submit" name="" value="Percentage per Year">
+		</form><br><br><br><br><br>
+
+		<h1>Description</h1>
+
+		<p>
+			Plastic recycling is the process of recovering scrap or waste plastic and reprocessing the material into useful products.
+			When different types of plastics are melted together, they tend to phase-separate, like oil and water, and set in these layers.
+		</p>
+
+	</div>
+
+</body>
+</html>

@@ -1,0 +1,20 @@
+CREATE TABLE COLLECTOR
+(
+	agent_id    		 	VARCHAR2(15),
+	dealer_dealership_no 	VARCHAR2(10),
+	  
+	CONSTRAINT COL_dealNo_aId_pk
+		PRIMARY KEY (agent_id,dealer_dealership_no),
+	CONSTRAINT COL_dealership_no_fk
+		FOREIGN KEY (dealer_dealership_no)
+		REFERENCES Local_Dealer	(dealer_dealership_no),
+	CONSTRAINT COL_agent_id_fk 
+		FOREIGN KEY (agent_id)
+		REFERENCES Area_Agent (agent_id)
+);
+
+INSERT INTO COLLECTOR VALUES ('AA_0000001','LD_0000001');
+INSERT INTO COLLECTOR VALUES ('AA_0000002','LD_0000002');
+INSERT INTO COLLECTOR VALUES ('AA_0000003','LD_0000003');
+INSERT INTO COLLECTOR VALUES ('AA_0000004','LD_0000004');
+INSERT INTO COLLECTOR VALUES ('AA_0000005','LD_0000005');

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Metal</title>
+	<style type="text/css">
+		
+		*
+		{
+			margin: 0;
+			padding: 0;
+		}
+
+		.container
+		{
+			width: 100%;
+			height: 100vh;
+			background-image: url('img/metal.jpg');
+			background-size: cover;
+			background-position: center;
+			background-attachment: fixed;
+		}
+
+		form
+		{
+			float: left;
+			margin-top: 25px;
+			margin-left: 25px;
+		}
+
+		input
+		{
+			background: none;
+			outline: none;
+			border: 2px solid green;
+			border-radius: 50px;
+			padding: 15px;
+			font-size: 20px;
+		}
+
+		input:hover
+		{
+			cursor: pointer;
+			background-color: green;
+			color: white;
+		}
+
+		h1
+		{
+			margin-top: 20px;
+			font-size: 50px;
+			margin-left: 25px;
+		}
+
+		p
+		{
+			width: 450px;
+			margin-left: 25px;
+			font-size: 20px;
+			margin-top: 15px;
+			text-align: justify;
+		}
+
+
+	</style>
+</head>
+<body>
+
+	<div class="container">
+		
+		<form action="user/metalMachine.jsp" method="get">
+			<input type="submit" name="" value="Machine">
+		</form>
+
+		<form action="user/metalCompany.jsp" method="get">
+			<input type="submit" name="" value="Company">
+		</form>
+
+		<form action="user/metalProducts.jsp" method="get">
+			<input type="submit" name="" value="End Products">
+		</form>
+
+		<form action="user/metalPercentage.jsp" method="get">
+			<input type="submit" name="" value="Percentage per Year">
+		</form><br><br><br><br><br>
+
+		<h1>Description</h1>
+		<p>
+			The Process of Metal Recycling. The process of metal recycling involves four stages.
+			Scrap metal centres then sell the scrap to larger super collectors where 
+			it is shredded and then melted in furnaces at high temperatures to produce blocks, 
+			ingots or sheets to be sold to manufacturers of metal products.
+		</p>
+
+	</div>
+
+</body>
+</html>

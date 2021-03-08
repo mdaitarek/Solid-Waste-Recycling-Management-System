@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Food</title>
+	<style type="text/css">
+		
+		*
+		{
+			margin: 0;
+			padding: 0;
+		}
+
+		.container
+		{
+			width: 100%;
+			height: 100vh;
+			background-image: url('img/food.jpg');
+			background-size: cover;
+			background-position: center;
+			background-attachment: fixed;
+		}
+
+		form
+		{
+			float: left;
+			margin-top: 25px;
+			margin-left: 25px;
+		}
+
+		input
+		{
+			background: none;
+			outline: none;
+			border: 2px solid green;
+			border-radius: 50px;
+			padding: 15px;
+			font-size: 20px;
+		}
+
+		input:hover
+		{
+			cursor: pointer;
+			background-color: green;
+			color: white;
+		}
+
+		h1
+		{
+			margin-top: 50px;
+			font-size: 50px;
+			margin-left: 25px;
+		}
+
+		p
+		{
+			width: 500px;
+			margin-left: 25px;
+			margin-top: 25px;
+			text-align: justify;
+			font-size: 25px;
+		}
+
+	</style>
+</head>
+<body>
+
+	<div class="container">
+		
+		<form action="user/foodMachine.jsp" method="get">
+			<input type="submit" name="" value="Machine">
+		</form>
+
+		<form action="user/foodCompany.jsp" method="get">
+			<input type="submit" name="" value="Company">
+		</form>
+
+		<form action="user/foodProducts.jsp" method="get">
+			<input type="submit" name="" value="End Products">
+		</form>
+
+		<form action="user/foodPercentage.jsp" method="get">
+			<input type="submit" name="" value="Percentage per Year">
+		</form><br><br><br><br><br>
+
+		<h1>Description</h1>
+
+		<p>
+			Food waste recycling is a process to convert food waste into useful materials and products for achieving sustainability of the environment. Food waste is defined as all inedible and edible parts of food that creates preceding and succeeding food processing, production and consumption. Greenhouse gases, especially methane can be reduced by food waste recycling. Food waste recycling can also alleviate the saturation of landfill sites in Hong Kong.
+		</p>
+
+	</div>
+
+</body>
+</html>
